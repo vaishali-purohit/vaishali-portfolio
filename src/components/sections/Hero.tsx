@@ -15,14 +15,13 @@ export default function Hero() {
         high-growth startups.
       </p>
 
-      {/* NEW SECTION */}
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-700">
-        <div>✔ AI-powered production systems (100k+ users)</div>
-        <div>✔ 30% performance improvement in live systems</div>
-        <div>✔ SSR / CSR hybrid architecture design</div>
-        <div>✔ 30+ reusable component systems built</div>
-        <div>✔ Backend + frontend system ownership</div>
-        <div>✔ Mentored engineers & led architecture decisions</div>
+        <div>✔ Built AI platform used by 100k+ users</div>
+        <div>✔ Reduced production latency by 30%</div>
+        <div>✔ Designed SSR/CSR hybrid architectures</div>
+        <div>✔ Built 50+ reusable frontend components</div>
+        <div>✔ Led backend + frontend system design</div>
+        <div>✔ 7+ years production engineering experience</div>
       </div>
 
       <div className="mt-10 flex gap-4">
