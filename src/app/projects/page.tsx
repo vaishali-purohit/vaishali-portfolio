@@ -6,11 +6,12 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-semibold">Projects & Case Studies</h1>
 
       <p className="mt-4 text-gray-600">
-        A collection of systems I’ve built across AI platforms, enterprise
-        applications, and real-time web systems.
+        A collection of production systems I’ve built across AI platforms,
+        enterprise applications, and real-time systems.
       </p>
 
       <div className="mt-10 space-y-6">
+        {/* MODELIA */}
         <Link
           href="/projects/modelia"
           className="block border p-5 rounded-md hover:bg-gray-50"
@@ -25,21 +26,26 @@ export default function ProjectsPage() {
           </p>
         </Link>
 
+        {/* AXA */}
         <div className="border p-5 rounded-md">
           <h2 className="font-semibold">Enterprise Insurance System (AXA)</h2>
           <p className="text-sm text-gray-600 mt-1">
-            Reduced claim processing time by 40% using React + TypeScript
-            systems.
+            Built scalable insurance claim system improving processing
+            efficiency by 40%.
           </p>
           <p className="text-xs text-gray-500 mt-2">
-            React • TypeScript • REST APIs
+            React • TypeScript • REST APIs • Enterprise Systems
           </p>
         </div>
 
+        {/* DEQODE */}
         <div className="border p-5 rounded-md">
-          <h2 className="font-semibold">Real-time Taxi Platform</h2>
+          <h2 className="font-semibold">
+            Real-time Taxi + Trading Systems (DEQODE)
+          </h2>
           <p className="text-sm text-gray-600 mt-1">
-            Built WebSocket-based live tracking system for 5,000+ daily rides.
+            Built WebSocket-based taxi tracking system + trading UI handling
+            real-time data.
           </p>
           <p className="text-xs text-gray-500 mt-2">
             React • Node.js • WebSockets • Google Maps
