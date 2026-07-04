@@ -6,11 +6,11 @@ export default function ResumePage() {
   return (
     <Container>
       <div className="py-20">
-        <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">
+        <h1 className="text-3xl font-semibold text-foreground">
           Resume
         </h1>
 
-        <p className="mt-6 max-w-2xl text-gray-700 dark:text-gray-300">
+        <p className="mt-6 max-w-2xl text-muted-foreground">
           Download my resume or read the experience summary below.
         </p>
 
@@ -22,13 +22,13 @@ export default function ResumePage() {
 
         <div className="mt-16 max-w-3xl space-y-10">
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-foreground">
               Senior Software Engineer — Modelia
             </h2>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-1 text-sm text-muted-foreground">
               AI Platform · React, TypeScript, Node.js
             </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 dark:text-gray-300">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
               <li>
                 Architected hybrid SSR/CSR system supporting 100k+ monthly users.
               </li>
@@ -48,13 +48,13 @@ export default function ResumePage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-foreground">
               Software Engineer — AXA
             </h2>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-1 text-sm text-muted-foreground">
               Enterprise Insurance Systems · React, TypeScript, REST APIs
             </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 dark:text-gray-300">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
               <li>
                 Delivered scalable claim processing UI improving throughput by
                 40%.
@@ -74,13 +74,13 @@ export default function ResumePage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-foreground">
               Solution Engineer — Deqode
             </h2>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-1 text-sm text-muted-foreground">
               Real-time Systems · React, Node.js, WebSockets
             </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 dark:text-gray-300">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
               <li>
                 Built live taxi tracking UI with Google Maps using WebSocket
                 fan-out.
@@ -96,13 +96,13 @@ export default function ResumePage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-foreground">
               Engineer — miniOrange
             </h2>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-1 text-sm text-muted-foreground">
               Security Plugins · WordPress, SSO, Enterprise Auth
             </p>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-700 dark:text-gray-300">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
               <li>
                 Designed extensible plugin architecture powering 8 SSO/MFA
                 modules.

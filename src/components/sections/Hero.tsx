@@ -7,15 +7,15 @@ export default function Hero() {
     <header className="relative overflow-hidden pb-20 pt-28">
       <Container>
         <div className="max-w-3xl">
-          <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-medium text-muted-foreground">
             {SITE_CONFIG.location}
           </p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl dark:text-gray-100">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-6xl">
             {SITE_CONFIG.title}
           </h1>
 
-          <p className="mt-6 text-lg leading-relaxed text-gray-700 md:text-xl dark:text-gray-300">
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
             {SITE_CONFIG.description}
           </p>
 
@@ -31,12 +31,12 @@ export default function Hero() {
           {METRICS.map((metric) => (
             <div
               key={metric.label}
-              className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900"
+              className="rounded-lg border border-border bg-background p-6 text-center shadow-sm"
             >
-              <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                <div className="text-2xl font-bold text-foreground">
                 {metric.value}
               </div>
-              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                <div className="mt-1 text-sm text-muted-foreground">
                 {metric.label}
               </div>
             </div>

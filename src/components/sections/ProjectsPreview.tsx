@@ -5,9 +5,9 @@ export default function ProjectsPreview() {
   const featured = PROJECTS.slice(0, 3)
 
   return (
-    <section className="border-t border-gray-200 dark:border-gray-800">
+    <section className="border-t border-border">
       <div className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+        <h2 className="text-xl font-semibold text-foreground">
           Featured Case Studies
         </h2>
 
@@ -15,13 +15,13 @@ export default function ProjectsPreview() {
           {featured.map((project) => (
             <article
               key={project.slug}
-              className="group flex flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 transition hover:border-gray-400 dark:border-gray-800 dark:bg-gray-900 dark:hover:border-gray-700"
+              className="group flex flex-col justify-between rounded-lg border border-border bg-background p-6 transition hover:border-border dark:hover:border-muted-foreground"
             >
               <div>
-                <h3 className="font-semibold text-gray-900 group-hover:underline dark:text-gray-100">
+                <h3 className="font-semibold text-foreground group-hover:underline">
                   {project.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground dark:text-muted-foreground">
                   {project.tagline}
                 </p>
               </div>
@@ -29,7 +29,7 @@ export default function ProjectsPreview() {
                 {project.tech.slice(0, 3).map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-gray-200 px-2.5 py-0.5 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-300"
+                    className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground"
                   >
                     {t}
                   </span>

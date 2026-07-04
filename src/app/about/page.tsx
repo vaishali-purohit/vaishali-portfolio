@@ -5,11 +5,11 @@ export default function AboutPage() {
   return (
     <Container>
       <div className="py-20">
-        <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100">
+        <h1 className="text-3xl font-semibold text-foreground">
           About Me
         </h1>
 
-        <div className="mt-10 max-w-3xl space-y-6 text-gray-700 dark:text-gray-300">
+        <div className="mt-10 max-w-3xl space-y-6 text-muted-foreground">
           <p className="text-lg leading-relaxed">
             I am a Senior Full-Stack Engineer with 7+ years of experience
             building scalable web applications and AI-powered platforms. I
@@ -32,14 +32,14 @@ export default function AboutPage() {
           </p>
 
           <div className="mt-10">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+            <h2 className="text-xl font-semibold text-foreground">
               Core Focus Areas
             </h2>
             <div className="mt-4 flex flex-wrap gap-2">
               {TECH_STACK.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-gray-200 bg-white px-4 py-1.5 text-sm text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
+                  className="rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted-foreground"
                 >
                   {tech}
                 </span>

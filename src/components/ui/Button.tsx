@@ -14,7 +14,7 @@ export default function Button({
   const styles =
     variant === "primary"
       ? `${base} bg-accent text-accent-fg hover:opacity-90`
-      : `${base} border border-gray-300 text-gray-700 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-900`
+      : `${base} border border-border text-muted-foreground hover:bg-muted dark:hover:bg-muted`
 
   return (
     <Link href={href} className={styles}>

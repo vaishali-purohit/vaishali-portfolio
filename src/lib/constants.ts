@@ -29,6 +29,7 @@ export const FOCUS_AREAS = [
 export const TECH_STACK = [
   "React",
   "TypeScript",
+  "Python",
   "Node.js",
   "Next.js",
   "PostgreSQL",
@@ -252,6 +253,60 @@ export const PROJECTS: ProjectCaseStudy[] = [
       "Security Modules (SSO/MFA/SCIM)",
       "App / SSO Target",
       "Audit + Compliance Logs",
+    ],
+  },
+  {
+    slug: "msc-eo-ai",
+    title: "Adaptive Onboard AI for EO Data Prioritization",
+    client: "MSc Research — Earth Observation Systems",
+    tagline:
+      "Ongoing research project exploring lightweight onboard AI for prioritizing Earth observation satellite imagery downlinks using the Adaptive Scientific Value Function (ASVF) with a mandatory safety gate.",
+    tech: [
+      "Python",
+      "PyTorch",
+      "MobileNetV2",
+      "FastAPI",
+      "React",
+      "Rasterio",
+      "Skyfield",
+      "D3.js",
+    ],
+    problem:
+      "Earth observation satellites generate more imagery than they can transmit given limited onboard memory, power, and intermittent ground-station contact. Conventional 'downlink everything' approaches waste scarce bandwidth and delay access to time-critical information such as deforestation and wildfire detection.",
+    design: {
+      title: "Adaptive Scientific Value Function (ASVF) with Safety Gate",
+      items: [
+        "Onboard lightweight CNN (MobileNetV2) for real-time tile scoring",
+        "Multi-signal ASVF combining detection confidence, event severity, and live resource state",
+        "Mandatory safety gate ensuring critical alerts always transmit",
+        "Skyfield-based orbital simulation for realistic communication windows",
+        "Interactive dashboard for visualizing forest change, ASVF scores, and transmission decisions",
+      ],
+    },
+    contributions: [
+      "Designed the ASVF scoring framework fusing multi-signal environmental event detection",
+      "Developed lightweight CNN pipeline on PyTorch for onboard imagery prioritization",
+      "Built FastAPI backend for model inference, ASVF ranking, and resource simulation",
+      "Implemented React + D3.js dashboard for live visualization of satellite resource states",
+      "Integrated orbital simulation using Skyfield for realistic communication window modeling",
+    ],
+    tradeoffs: [
+      "Accepted reduced model capacity for onboard deployment versus cloud accuracy",
+      "Chose transparent ASVF score over opaque black-box prioritization to ensure auditability",
+      "Lowered update frequency to conserve satellite power while maintaining timely alerts",
+    ],
+    impact: [
+      { metric: "Ongoing", detail: "MSc research project" },
+      { metric: "Objective", detail: "Reduce time-critical deforestation and wildfire data latency" },
+      { metric: "Beneficiaries", detail: "ESA, NASA, satellite system engineers, and environmental researchers" },
+      { metric: "Novelty", detail: "First framework to fuse environmental signals with live resource constraints in one auditable score" },
+    ],
+    architectureFlow: [
+      "Satellite Imagery",
+      "Onboard AI (MobileNetV2 / PyTorch)",
+      "ASVF Scoring Engine",
+      "Safety Gate / Prioritization",
+      "Downlink Selection + Ground Station",
     ],
   },
 ];
