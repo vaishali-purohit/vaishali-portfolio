@@ -16,6 +16,7 @@ part of my MSc in Data Science at the University of Leicester.
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Deployment:** Vercel
+- Built with AI-assisted tooling (Claude Code)
 
 ## Getting Started
 
