@@ -15,19 +15,22 @@ export default function Hero() {
         high-growth startups.
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-3 text-sm">
-        <span className="px-3 py-1 border rounded-full">AI Platforms</span>
-        <span className="px-3 py-1 border rounded-full">100k+ Users</span>
-        <span className="px-3 py-1 border rounded-full">React / Node.js</span>
-        <span className="px-3 py-1 border rounded-full">System Design</span>
+      {/* NEW SECTION */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-700">
+        <div>✔ AI-powered production systems (100k+ users)</div>
+        <div>✔ 30% performance improvement in live systems</div>
+        <div>✔ SSR / CSR hybrid architecture design</div>
+        <div>✔ 30+ reusable component systems built</div>
+        <div>✔ Backend + frontend system ownership</div>
+        <div>✔ Mentored engineers & led architecture decisions</div>
       </div>
 
       <div className="mt-10 flex gap-4">
         <a
-          href="/projects"
+          href="/projects/modelia"
           className="px-6 py-2 bg-black text-white rounded-md"
         >
-          View Case Studies
+          View Case Study
         </a>
 
         <a href="/resume" className="px-6 py-2 border rounded-md">
