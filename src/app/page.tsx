@@ -4,7 +4,7 @@ import ProjectsPreview from "@/components/sections/ProjectsPreview";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-20">
       <Hero />
       <AboutPreview />
       <ProjectsPreview />
