@@ -54,10 +54,10 @@ export const SOCIALS = [
 ];
 
 export const METRICS = [
-  { value: "100k+", label: "Platform Users" },
-  { value: "30%", label: "Latency Reduction" },
-  { value: "40%", label: "Workflow Efficiency" },
-  { value: "5,000+", label: "Daily Real-time Rides" },
+  { value: 7, suffix: "+", label: "Years Experience" },
+  { value: 100, suffix: "k+", label: "Platform Users" },
+  { value: 30, suffix: "%", label: "Latency Reduction" },
+  { value: 40, suffix: "%", label: "Workflow Efficiency" },
 ];
 
 export type ProjectCaseStudy = {
@@ -80,7 +80,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "modelia",
     title: "AI Fashion Platform",
     client: "Modelia",
-    period: "2022 — 2024",
+    period: "2024 — 2025",
     tagline:
       "SSR/CSR hybrid AI platform serving 100k+ users with real-time image generation workflows.",
     tech: ["React", "TypeScript", "Node.js", "AI/ML", "System Design"],
@@ -126,7 +126,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "axa",
     title: "Enterprise Insurance System",
     client: "AXA",
-    period: "2021 — 2022",
+    period: "2023 — 2024",
     tagline:
       "Scalable React/TypeScript claim processing UI improving operational efficiency by 40% with 15% fewer UI defects.",
     tech: ["React", "TypeScript", "REST APIs", "Enterprise Systems"],
@@ -172,7 +172,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "deqode",
     title: "Real-time Taxi Platform",
     client: "Deqode",
-    period: "2020 — 2021",
+    period: "2019 — 2023",
     tagline:
       "WebSocket-based live tracking system supporting 5,000+ daily rides with sub-second geolocation updates.",
     tech: ["React", "Node.js", "WebSockets", "Google Maps"],
@@ -218,7 +218,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "miniorange",
     title: "Enterprise Security Plugins",
     client: "miniOrange",
-    period: "2019 — 2020",
+    period: "2018 — 2019",
     tagline:
       "Authentication and security plugins improving enterprise adoption by 30% across WordPress and SSO ecosystems.",
     tech: ["WordPress", "Security Systems", "SSO", "Enterprise Plugins"],
