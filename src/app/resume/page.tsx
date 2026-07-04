@@ -8,7 +8,7 @@ export default function ResumePage() {
       </p>
 
       <a
-        href="/resume.pdf"
+        href="/Vaishali_Purohit_Resume_2026.pdf"
         className="mt-6 inline-block px-5 py-2 border rounded-md"
       >
         Download Resume
