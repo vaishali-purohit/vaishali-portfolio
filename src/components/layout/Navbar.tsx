@@ -58,6 +58,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <div className="pt-2">
+            <ThemeToggle />
+          </div>
         </nav>
       )}
     </header>

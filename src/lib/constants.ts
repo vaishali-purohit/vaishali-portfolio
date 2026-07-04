@@ -65,6 +65,7 @@ export type ProjectCaseStudy = {
   title: string;
   tagline: string;
   client: string;
+  period: string;
   tech: string[];
   problem: string;
   design: { title: string; items: string[] };
@@ -79,6 +80,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "modelia",
     title: "AI Fashion Platform",
     client: "Modelia",
+    period: "2022 — 2024",
     tagline:
       "SSR/CSR hybrid AI platform serving 100k+ users with real-time image generation workflows.",
     tech: ["React", "TypeScript", "Node.js", "AI/ML", "System Design"],
@@ -124,6 +126,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "axa",
     title: "Enterprise Insurance System",
     client: "AXA",
+    period: "2021 — 2022",
     tagline:
       "Scalable React/TypeScript claim processing UI improving operational efficiency by 40% with 15% fewer UI defects.",
     tech: ["React", "TypeScript", "REST APIs", "Enterprise Systems"],
@@ -169,6 +172,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "deqode",
     title: "Real-time Taxi Platform",
     client: "Deqode",
+    period: "2020 — 2021",
     tagline:
       "WebSocket-based live tracking system supporting 5,000+ daily rides with sub-second geolocation updates.",
     tech: ["React", "Node.js", "WebSockets", "Google Maps"],
@@ -214,6 +218,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "miniorange",
     title: "Enterprise Security Plugins",
     client: "miniOrange",
+    period: "2019 — 2020",
     tagline:
       "Authentication and security plugins improving enterprise adoption by 30% across WordPress and SSO ecosystems.",
     tech: ["WordPress", "Security Systems", "SSO", "Enterprise Plugins"],
@@ -245,7 +250,10 @@ export const PROJECTS: ProjectCaseStudy[] = [
       { metric: "30%", detail: "increase in enterprise plugin adoption" },
       { metric: "8", detail: "security modules on shared architecture" },
       { metric: "25%", detail: "reduction in onboarding support tickets" },
-      { metric: "4", detail: "common exploit vectors covered by regression tests" },
+      {
+        metric: "4",
+        detail: "common exploit vectors covered by regression tests",
+      },
     ],
     architectureFlow: [
       "Enterprise IdP",
@@ -259,6 +267,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
     slug: "msc-eo-ai",
     title: "Adaptive Onboard AI for EO Data Prioritization",
     client: "MSc Research — Earth Observation Systems",
+    period: "2026 — Present",
     tagline:
       "Ongoing research project exploring lightweight onboard AI for prioritizing Earth observation satellite imagery downlinks using the Adaptive Scientific Value Function (ASVF) with a mandatory safety gate.",
     tech: [
@@ -297,9 +306,20 @@ export const PROJECTS: ProjectCaseStudy[] = [
     ],
     impact: [
       { metric: "Ongoing", detail: "MSc research project" },
-      { metric: "Objective", detail: "Reduce time-critical deforestation and wildfire data latency" },
-      { metric: "Beneficiaries", detail: "ESA, NASA, satellite system engineers, and environmental researchers" },
-      { metric: "Novelty", detail: "First framework to fuse environmental signals with live resource constraints in one auditable score" },
+      {
+        metric: "Objective",
+        detail: "Reduce time-critical deforestation and wildfire data latency",
+      },
+      {
+        metric: "Beneficiaries",
+        detail:
+          "ESA, NASA, satellite system engineers, and environmental researchers",
+      },
+      {
+        metric: "Novelty",
+        detail:
+          "First framework to fuse environmental signals with live resource constraints in one auditable score",
+      },
     ],
     architectureFlow: [
       "Satellite Imagery",

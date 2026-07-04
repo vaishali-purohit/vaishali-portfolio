@@ -12,11 +12,11 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-6xl">
-            {SITE_CONFIG.title}
+            Senior Full-Stack Engineer
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {SITE_CONFIG.description}
+            Specialist in scalable AI systems and enterprise frontend architecture. Built AI platforms serving 100k+ users, optimized workflows by 40%, and delivered real-time systems for 5,000+ daily transactions.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

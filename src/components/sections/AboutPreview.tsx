@@ -9,17 +9,16 @@ export default function AboutPreview() {
         </h2>
 
         <div className="mt-6 max-w-2xl text-muted-foreground">
-          <p>
-            Senior engineer with experience across AI platforms, enterprise
-            systems, and real-time applications. Currently pursuing MSc in Data
-            Science at University of Leicester with a focus on applied AI and
-            scalable systems.
+          <p className="text-lg leading-relaxed">
+            Senior Full-Stack Engineer with 7+ years building scalable web applications,
+            AI-powered platforms, and real-time systems. Currently pursuing MSc in Data
+            Science at University of Leicester with a focus on applied AI and scalable systems.
           </p>
         </div>
 
         <Link
           href="/about"
-          className="mt-4 inline-block text-sm font-medium text-foreground underline underline-offset-4 hover:no-underline"
+          className="mt-6 inline-block text-sm font-medium text-foreground underline underline-offset-4 hover:no-underline"
         >
           Read more →
         </Link>
