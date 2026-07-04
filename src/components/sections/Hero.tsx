@@ -1,41 +1,48 @@
+import Container from "@/components/ui/Container"
+import Button from "@/components/ui/Button"
+import { SITE_CONFIG, METRICS } from "@/lib/constants"
+
 export default function Hero() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-28">
-      <p className="text-sm text-gray-500 mb-4">
-        Available for Remote / Singapore Opportunities
-      </p>
+    <header className="relative overflow-hidden pb-20 pt-28">
+      <Container>
+        <div className="max-w-3xl">
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            {SITE_CONFIG.location}
+          </p>
 
-      <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-        Senior Full-Stack Engineer
-      </h1>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl dark:text-gray-100">
+            {SITE_CONFIG.title}
+          </h1>
 
-      <p className="mt-6 text-lg text-gray-700 max-w-2xl">
-        I build scalable AI-powered web platforms using React, TypeScript, and
-        Node.js. 7+ years of experience across enterprise systems and
-        high-growth startups.
-      </p>
+          <p className="mt-6 text-lg leading-relaxed text-gray-700 md:text-xl dark:text-gray-300">
+            {SITE_CONFIG.description}
+          </p>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-700">
-        <div>✔ Built AI platform used by 100k+ users</div>
-        <div>✔ Reduced production latency by 30%</div>
-        <div>✔ Designed SSR/CSR hybrid architectures</div>
-        <div>✔ Built 50+ reusable frontend components</div>
-        <div>✔ Led backend + frontend system design</div>
-        <div>✔ 7+ years production engineering experience</div>
-      </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button href="/projects/modelia">View Case Study</Button>
+            <Button href={SITE_CONFIG.resume} variant="secondary">
+              Download Resume
+            </Button>
+          </div>
+        </div>
 
-      <div className="mt-10 flex gap-4">
-        <a
-          href="/projects/modelia"
-          className="px-6 py-2 bg-black text-white rounded-md"
-        >
-          View Case Study
-        </a>
-
-        <a href="/resume" className="px-6 py-2 border rounded-md">
-          Download Resume
-        </a>
-      </div>
-    </section>
-  );
+        <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+          {METRICS.map((metric) => (
+            <div
+              key={metric.label}
+              className="rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm dark:border-gray-800 dark:bg-gray-900"
+            >
+              <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                {metric.value}
+              </div>
+              <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                {metric.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </header>
+  )
 }
