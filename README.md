@@ -1,69 +1,55 @@
-# Vaishali Portfolio
+# Vaishali Purohit — Portfolio
 
-Personal portfolio website built with **Next.js**, showcasing my experience as a Senior Full-Stack Engineer working with React, TypeScript, Node.js, and AI-powered platforms.
+Personal portfolio site for Vaishali Purohit, Senior Full-Stack Engineer.
 
-## Overview
+**Live site:** [vaishali-portfolio-nine.vercel.app](https://vaishali-portfolio-nine.vercel.app/)
 
-This portfolio highlights:
+## About
 
-- 7+ years of experience in full-stack development
-- Work on scalable AI-driven platforms (100k+ users)
-- Enterprise systems (insurance, authentication, backend APIs)
-- Real-time applications and modern web architectures
-- MSc in Data Science (University of Leicester)
+This site showcases my professional background, case studies from recent roles
+(Modelia, AXA Life Insurance, Deqode, miniOrange), and ongoing research work as
+part of my MSc in Data Science at the University of Leicester.
 
 ## Tech Stack
 
-- Next.js 15 (App Router)
-- TypeScript
-- Tailwind CSS
-- React
-- Vercel (deployment)
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
 ## Getting Started
 
-First, install dependencies:
+Clone the repo and install dependencies:
 
 ```bash
+git clone https://github.com/vaishali-purohit/vaishali-portfolio.git
+cd vaishali-portfolio
 npm install
 ```
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Project Structure (WIP)
+## Project Structure
 
-This project will include:
-
-- **/app** – Pages and routing
-- **/components** – Reusable UI components
-- **/sections** – Page sections (Hero, About, Projects, etc.)
-- **/content** – MDX-based case studies and blog posts
-- **/lib** – Utilities and helpers
-
-## Deployment
-
-This project is deployed using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-To deploy:
-
-```bash
-vercel
+```
+├── app/            # Routes and pages (App Router)
+├── components/     # Reusable UI components
+├── public/          # Static assets (images, icons)
+└── styles/         # Global styles and Tailwind config
 ```
 
-Or connect the repository directly to Vercel for automatic deployments.
+## Contact
 
-## Goal
+- **Email:** vaishalipurohit12@gmail.com
+- **LinkedIn:** [linkedin.com/in/vaishali-purohit](https://linkedin.com/in/vaishali-purohit)
+- **GitHub:** [github.com/vaishali-purohit](https://github.com/vaishali-purohit)
 
-This portfolio is designed to demonstrate my engineering experience, system design thinking, and ability to build scalable, production-grade web applications.
+## License
+
+MIT
